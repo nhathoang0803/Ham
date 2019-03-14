@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemTraKyTu(mang, kyTu) {
+            if (mang.indexOf(kyTu) === -1) {
+                return mang.indexOf(kyTu);
+            } else {
+                var patt = new RegExp(kyTu, "gi")
+                var tanSuat = mang.match(patt).length;
+                return tanSuat
+            }
+        }
+        var mang = prompt("Nhập vào dòng chữ bất kỳ");
+        var kiTu = prompt('Nhập vào kí tự bất kỳ');
+        alert('Số lần xuất hiện kí tự trong mảng là : ' + kiemTraKyTu(mang,kiTu));
+    </script>
+</body>
+</html>

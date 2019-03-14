@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const number = 10000;
+        for (let i=0;i < 10000;i++) {
+            if(isPrime(i)==true) {
+                document.write(i+" ");
+            }
+        }
+        function isPrime(number) {
+            if (number<2) {
+                return false;
+            } else {
+                var sqrtNumber = Math.sqrt(number);
+                for (let i=2; i <=sqrtNumber;i++) {
+                    if(number%i==0) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

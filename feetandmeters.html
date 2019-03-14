@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label>Feet :</label>
+        </td>
+        <td>
+            <input id="feet" type="number" oninput="feetToMeter(this.value)" onchange="feetToMeter(this.value)">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Meters :</label>
+        </td>
+        <td>
+            <input id="meters" type="number" oninput="metersTofeet(this.value)" onchange="metersTofeet(this.value)">
+        </td>
+    </tr>
+</table>
+    <script>
+        function feetToMeter(valFeet) {
+            valFeet = parseFloat(valFeet);
+            document.getElementById("meters").value = 0.305 * valFeet;
+        }
+
+        function metersTofeet(valMeter) {
+            valMeter = parseFloat(valMeter);
+            document.getElementById("feet").value = 3.279 * valMeter;
+        }
+    </script>
+</body>
+</html>

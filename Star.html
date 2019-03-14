@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" class="ketqua" id="star" />
+<button type="text" onclick="Tim()" >Tìm</button>
+    <script>
+        var ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function Tim() {
+        var mega= document.getElementById("star").value;
+        var ketqua = 0;
+        for (var i=0;i < ngoiSao.length;i++) {
+        if(mega == ngoiSao[i]) {
+            alert(chomSao[i]);
+            ketqua=1;
+            }
+        }
+        if (ketqua == 0) {
+            alert("Không có kết quả ");
+        }
+    }
+    </script>
+</body>
+</html>

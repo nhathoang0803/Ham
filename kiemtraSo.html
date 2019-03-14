@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = prompt('nhập ký tự cần kiểm tra : ');
+    checkNumber(x);
+    function checkNumber(x) {
+        if (isNaN(x)) {
+            alert(x + ' Không phải là số');
+        } else
+            alert(x + ' là số');
+    }
+</script>
+</body>
+</html>
